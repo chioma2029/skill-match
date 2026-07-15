@@ -6,6 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mission</title>
     <link rel="stylesheet" href="styling.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 0.8s ease forwards;
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 34px rgba(0, 0, 0, 0.14);
+        }
+
+        .pulse-btn:hover {
+            animation: pulse 0.6s ease;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+    </style>
 </head>
 
 <body>
@@ -23,62 +67,62 @@
     </header>
 
     <main>
-        <section style="padding: 40px 20px; background: linear-gradient(135deg, #f5f7ff, #eef3ff);">
-            <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
-                <div style="flex: 1; min-width: 300px;">
-                    <p style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 2px; color: #4a66d8; font-weight: 700; margin-bottom: 10px;">Our Mission</p>
-                    <h1 style="font-size: 2.4rem; margin: 0 0 15px; color: #1f2a44;">Bridging talent and opportunity</h1>
-                    <p style="font-size: 1.05rem; line-height: 1.8; color: #4b5563; margin-bottom: 20px;">
-                        We are dedicated to bridging the gap between employers and employees through a skill-based matching system that connects the right people with the right opportunities.
+        <section style="padding: 60px 20px 40px; background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 45%, #4f46e5 100%); color: white;">
+            <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 35px;">
+                <div class="fade-up" style="flex: 1; min-width: 320px;">
+                    <p style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 3px; color: #c7d2fe; font-weight: 700; margin-bottom: 12px;">Our Mission</p>
+                    <h1 style="font-size: 2.7rem; margin: 0 0 16px; line-height: 1.2;">Bridging talent with opportunity through intelligent connections.</h1>
+                    <p style="font-size: 1.08rem; line-height: 1.8; color: #e2e8f0; margin-bottom: 24px;">
+                        We are dedicated to bridging the gap between employers and employees through a skill-based matching system that creates meaningful, future-ready opportunities.
                     </p>
                     <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-                        <a href="index.html" style="background: #4a66d8; color: white; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: 600;">Explore Opportunities</a>
-                        <a href="about.html" style="border: 1px solid #4a66d8; color: #4a66d8; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: 600;">Learn More</a>
+                        <a href="index.html" class="pulse-btn" style="background: white; color: #1e3a8a; padding: 12px 20px; border-radius: 999px; text-decoration: none; font-weight: 700;">Explore Opportunities</a>
+                        <a href="about.html" class="pulse-btn" style="border: 1px solid rgba(255,255,255,0.4); color: white; padding: 12px 20px; border-radius: 999px; text-decoration: none; font-weight: 700;">Learn More</a>
                     </div>
                 </div>
 
-                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+                <img class="fade-up delay-1 hover-lift" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
                     alt="Team collaboration in a modern workplace"
-                    style="flex: 1; min-width: 300px; max-width: 500px; width: 100%; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.15);">
+                    style="flex: 1; min-width: 320px; max-width: 520px; width: 100%; border-radius: 24px; box-shadow: 0 18px 45px rgba(0,0,0,0.25);">
             </div>
         </section>
 
         <section style="max-width: 1200px; margin: 40px auto; padding: 0 20px; display: grid; gap: 24px;">
-            <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center; background: white; padding: 24px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.08);">
+            <div class="fade-up delay-2 hover-lift" style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center; background: white; padding: 28px; border-radius: 24px; box-shadow: 0 12px 30px rgba(0,0,0,0.08);">
                 <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=700&q=80"
                     alt="Professionals working together"
-                    style="flex: 1; min-width: 280px; max-width: 360px; height: 240px; object-fit: cover; border-radius: 16px;">
+                    style="flex: 1; min-width: 280px; max-width: 380px; height: 250px; object-fit: cover; border-radius: 18px;">
                 <div style="flex: 1; min-width: 280px;">
-                    <h2 style="color: #1f2a44; margin-top: 0;">Why this mission matters</h2>
-                    <p style="line-height: 1.8; color: #4b5563;">
-                        We believe every person deserves a chance to grow, and every employer deserves a team that fits their needs. Our platform turns potential into opportunity by matching skills with purpose.
+                    <h2 style="color: #1e3a8a; margin-top: 0; font-size: 1.7rem;">Why this mission matters</h2>
+                    <p style="line-height: 1.9; color: #475569; font-size: 1.02rem;">
+                        We believe every person deserves a chance to grow, and every employer deserves a team that fits their needs. Our platform transforms potential into opportunity by matching skills, ambition, and purpose with precision.
                     </p>
                 </div>
             </div>
 
-            <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center; background: #f8fbff; padding: 24px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.06);">
+            <div class="fade-up delay-3 hover-lift" style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center; background: linear-gradient(120deg, #f8fbff, #eef4ff); padding: 28px; border-radius: 24px; box-shadow: 0 12px 30px rgba(0,0,0,0.06);">
                 <div style="flex: 1; min-width: 280px;">
-                    <h2 style="color: #1f2a44; margin-top: 0;">Our Values</h2>
-                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px;">
-                        <span style="background: #4a66d8; color: white; padding: 8px 14px; border-radius: 999px; font-weight: 600;">Integrity</span>
-                        <span style="background: #4a66d8; color: white; padding: 8px 14px; border-radius: 999px; font-weight: 600;">Innovation</span>
-                        <span style="background: #4a66d8; color: white; padding: 8px 14px; border-radius: 999px; font-weight: 600;">Collaboration</span>
-                        <span style="background: #4a66d8; color: white; padding: 8px 14px; border-radius: 999px; font-weight: 600;">Excellence</span>
-                        <span style="background: #4a66d8; color: white; padding: 8px 14px; border-radius: 999px; font-weight: 600;">Inclusivity</span>
+                    <h2 style="color: #1e3a8a; margin-top: 0; font-size: 1.7rem;">Our Values</h2>
+                    <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px;">
+                        <span style="background: #2563eb; color: white; padding: 9px 15px; border-radius: 999px; font-weight: 700;">Integrity</span>
+                        <span style="background: #2563eb; color: white; padding: 9px 15px; border-radius: 999px; font-weight: 700;">Innovation</span>
+                        <span style="background: #2563eb; color: white; padding: 9px 15px; border-radius: 999px; font-weight: 700;">Collaboration</span>
+                        <span style="background: #2563eb; color: white; padding: 9px 15px; border-radius: 999px; font-weight: 700;">Excellence</span>
+                        <span style="background: #2563eb; color: white; padding: 9px 15px; border-radius: 999px; font-weight: 700;">Inclusivity</span>
                     </div>
                 </div>
                 <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80"
                     alt="Diverse team sharing ideas"
-                    style="flex: 1; min-width: 280px; max-width: 360px; height: 240px; object-fit: cover; border-radius: 16px;">
+                    style="flex: 1; min-width: 280px; max-width: 380px; height: 250px; object-fit: cover; border-radius: 18px;">
             </div>
 
-            <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center; background: #1f2a44; color: white; padding: 24px; border-radius: 20px;">
+            <div class="fade-up delay-3 hover-lift" style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center; background: linear-gradient(120deg, #111827, #1f2937); color: white; padding: 28px; border-radius: 24px;">
                 <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80"
                     alt="Leadership team planning for growth"
-                    style="flex: 1; min-width: 280px; max-width: 360px; height: 240px; object-fit: cover; border-radius: 16px;">
+                    style="flex: 1; min-width: 280px; max-width: 380px; height: 250px; object-fit: cover; border-radius: 18px;">
                 <div style="flex: 1; min-width: 280px;">
-                    <h2 style="margin-top: 0;">Our Vision</h2>
-                    <p style="line-height: 1.8; color: #e5e7eb;">
+                    <h2 style="margin-top: 0; font-size: 1.7rem;">Our Vision</h2>
+                    <p style="line-height: 1.9; color: #e5e7eb; font-size: 1.02rem;">
                         By 2030, we aim to connect over 50,000 job seekers with 10,000 employers through an innovative skill-based matching platform, promoting inclusive employment and sustainable economic growth.
                     </p>
                 </div>
