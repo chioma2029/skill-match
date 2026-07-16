@@ -894,6 +894,26 @@ footer {
     color: #b8c7d8;
 }
 
+.about-hero {
+    padding-bottom: 70px;
+}
+
+.about-panel {
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+}
+
+.about-card {
+    min-height: 220px;
+}
+
+.about-story-grid {
+    align-items: center;
+}
+
+.about-quote {
+    margin-top: 10px;
+}
+
 @media (max-width: 900px) {
     .hero {
         grid-template-columns: 1fr;
