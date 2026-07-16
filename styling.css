@@ -68,21 +68,27 @@ body {
 }
 
 .impact-page .container {
-    max-width: 1000px;
-    margin: 30px auto;
+    max-width: 1200px;
+    margin: 0px auto;
     padding: 20px;
 }
 
 .impact-page .hero {
     background: linear-gradient(135deg, #2563eb, #3b82f6);
     color: white;
-    padding: 30px;
+    padding: 40px;
     border-radius: 12px;
+    width: 80%;
+    max-width: 900px;
+    height: 50px;
+    min-height: 50vh;
+    overflow: auto;
 }
 
 .impact-page .hero h1 {
     margin-top: 0;
-    font-size: 32px;
+    font-size: 100px;
+    color: darkblue
 }
 
 .impact-page .hero p {
@@ -94,12 +100,12 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .impact-page .card {
     background: white;
-    padding: 18px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
@@ -148,7 +154,7 @@ body {
 .impact-page .story-track {
     display: flex;
     width: max-content;
-    gap: 15px;
+    gap: 20px;
     animation: impactSlideLoop 18s linear infinite;
 }
 
@@ -166,8 +172,9 @@ body {
 }
 
 .impact-page .story-card:hover {
-    transform: translateY(-3px);
+    transform: .4s ease;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    background: #2563eb;
 }
 
 .impact-page .story-card img {
