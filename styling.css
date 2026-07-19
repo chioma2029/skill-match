@@ -470,27 +470,38 @@ header img {
 
 .chat-body {
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 }
 
-.bubble {
-    max-width: 84%;
-    padding: 12px 14px;
-    border-radius: 16px;
-    line-height: 1.5;
-    font-size: 0.93rem;
+.about-professional-panel {
+    padding: 24px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
-.bubble-bot {
-    background: rgba(255, 255, 255, 0.1);
-    align-self: flex-start;
+.about-professional-panel h3 {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    color: white;
 }
 
-.bubble-user {
-    background: linear-gradient(135deg, var(--accent-2), #1e88e5);
-    align-self: flex-end;
+.about-professional-panel p {
+    margin-bottom: 12px;
+    color: #dce7f2;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.about-professional-panel ul {
+    padding-left: 18px;
+    margin: 0;
+    color: #b8c7d8;
+    line-height: 1.7;
+}
+
+.about-professional-panel li {
+    margin-bottom: 8px;
 }
 
 .chat-input {
@@ -899,6 +910,145 @@ footer {
     padding: 20px 8% 35px;
     text-align: center;
     color: #b8c7d8;
+}
+
+..about-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4fb;
+    opacity: 0.95;
+    color: #1f2937;
+}
+
+.about-page header {
+    background: #0f222a;
+    padding: 15px 30px;
+}
+
+.about-page .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-page .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.about-page .nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.about-page .btn {
+    background: #2563eb;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.about-page .btn-secondary {
+    background: transparent;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.about-page .hero.about-hero {
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 900px;
+    min-height: 50vh;
+    overflow: auto;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.about-page .hero-text h1 {
+    color: white;
+    font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.about-page .hero-text p {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.about-page .hero-highlights span {
+    color: #374151;
+    font-weight: 600;
+}
+
+.about-page .section-intro p,
+.about-page .feature-card p,
+.about-page .cv-panel-text p,
+.about-page .cv-panel-card p,
+.about-page .mission-quote p {
+    color: #374151;
+    font-weight: 600;
+}
+
+.about-page .hero-highlights div {
+    background: white;
+    color: #0f172a;
+    border: 1px solid #dbeafe;
+}
+
+.about-page .hero-highlights strong {
+    color: #0f172a;
+}
+
+.about-page .chat-shell,
+.about-page .about-professional-panel,
+.about-page .feature-card,
+.about-page .cv-panel,
+.about-page .mission-quote {
+    background: white;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    color: #1f2937;
+}
+
+.about-page .about-professional-panel {
+    background: #f8fbff;
+    border-color: #dbeafe;
+}
+
+.about-page .about-professional-panel h3,
+.about-page .section-intro h2,
+.about-page .feature-card h3,
+.about-page .cv-panel-text h2,
+.about-page .cv-panel-card h3,
+.about-page .mission-quote strong {
+    color: #111827;
+}
+
+.about-page .about-professional-panel p,
+.about-page .about-professional-panel ul,
+.about-page .cv-panel-text ul,
+.about-page .cv-panel-card p {
+    color: #374151;
+}
+
+.about-page .about-hero,
+.about-page .about-quote {
+    background: transparent;
+    padding: 0;
+    border: none;
+    box-shadow: none;
 }
 
 .about-hero {
